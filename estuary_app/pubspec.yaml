@@ -1,0 +1,48 @@
+name: estuary_app
+description: Han River-Incheon Eutrophication Forecast App
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Supabase
+  supabase_flutter: ^2.5.0
+
+  # Maps (OpenStreetMap — no API key required)
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+
+  # Charts
+  fl_chart: ^0.68.0
+
+  # Push notifications
+  firebase_core: ^3.3.0
+  firebase_messaging: ^15.1.0
+  flutter_local_notifications: ^17.2.1+2
+
+  # State management
+  provider: ^6.1.2
+
+  # HTTP / networking
+  http: ^1.2.1
+  connectivity_plus: ^6.0.3
+
+  # Storage
+  shared_preferences: ^2.2.3
+
+  # UI
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
