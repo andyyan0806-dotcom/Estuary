@@ -60,25 +60,25 @@ class KoreaMaskLayer extends StatelessWidget {
   Widget build(BuildContext context) {
     return PolygonLayer(
       polygons: [
+        // Dark vignette over non-Korea area — dims the world, Korea shows through
         Polygon(
           points: _worldBox,
           holePointsList: const [_koreaMainland, _jejuIsland],
-          color: const Color(0xFFCADFF0),
+          color: const Color(0xCC060E1E), // 80% dark navy
           borderStrokeWidth: 0,
         ),
-        // Korea border outline
+        // Korea border glow
         Polygon(
           points: _koreaMainland,
           color: null,
-          borderColor: const Color(0xFF6B8FA8),
-          borderStrokeWidth: 1.2,
+          borderColor: const Color(0xFF2E5C8A),
+          borderStrokeWidth: 1.5,
         ),
-        // Jeju border outline
         Polygon(
           points: _jejuIsland,
           color: null,
-          borderColor: const Color(0xFF6B8FA8),
-          borderStrokeWidth: 1.0,
+          borderColor: const Color(0xFF2E5C8A),
+          borderStrokeWidth: 1.2,
         ),
       ],
     );
