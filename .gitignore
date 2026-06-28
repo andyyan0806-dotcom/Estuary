@@ -1,0 +1,18 @@
+# 환경변수 (절대 커밋하지 말 것)
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.db
+
+# Flutter
+estuary_app/.dart_tool/
+estuary_app/build/
+estuary_app/.flutter-plugins
+estuary_app/.flutter-plugins-dependencies
+
+# 기타
+.DS_Store
